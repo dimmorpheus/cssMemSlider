@@ -52,13 +52,13 @@ body {
     align-items: center;
 }
 
-@media screen and (min-width: 320px ) and (max-width: 499px){
+@media screen and (min-width: 320px ) and (max-width: 799px){
     .slider-description-container {
         flex-direction: column;
     }
 }
 
-@media screen and (min-width: 500px ) {
+@media screen and (min-width: 800px ) {
     .slider-description-container {
         flex-direction: row;
     }
