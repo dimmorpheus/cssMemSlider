@@ -1,3 +1,22 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        filter: blur(2px);
+    }
+    100% { opacity:  1;}
+}
+
+@keyframes from-right {
+    0% {
+        opacity: 0;
+        margin-left: 10%;
+    }
+    100% {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,12 +28,14 @@ body {
 }
 
 .main-container {
+		width: 100%;
     padding: 50px;
 }
 
 .image-container.active {
     display: block;
     border-radius: 12px;
+		animation: 2s alternate fadeIn;
 }
 
 .image-container {
@@ -72,6 +93,7 @@ body {
 .image-description.active {
     display: block;
     margin: 12px 0;
+		animation: 3s alternate from-right;
     font-family: "Helvetica";
     font-size: 20px;
     font-weight: 200;
